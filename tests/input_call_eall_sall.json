@@ -1,0 +1,43 @@
+{
+"Controllers":[
+{
+        "Command Status" : {
+                "Controller" : 0,
+                "Status" : "Success",
+                "Description" : "Show Drive Information Succeeded."
+        },
+        "Response Data" : {
+                "Drive Information" : [
+                        {
+                                "EID:Slt" : "252:1",
+                                "DID" : 0,
+                                "State" : "Onln",
+                                "DG" : 0,
+                                "Size" : "557.861 GB",
+                                "Intf" : "SAS",
+                                "Med" : "HDD",
+                                "SED" : "N",
+                                "PI" : "N",
+                                "SeSz" : "512B",
+                                "Model" : "ST600MM0006     ",
+                                "Sp" : "U"
+                        },
+                        {
+                                "EID:Slt" : "252:2",
+                                "DID" : 1,
+                                "State" : "Onln",
+                                "DG" : 0,
+                                "Size" : "557.861 GB",
+                                "Intf" : "SAS",
+                                "Med" : "HDD",
+                                "SED" : "N",
+                                "PI" : "N",
+                                "SeSz" : "512B",
+                                "Model" : "ST600MM0006     ",
+                                "Sp" : "U"
+                        }
+                ]
+        }
+}
+]
+}

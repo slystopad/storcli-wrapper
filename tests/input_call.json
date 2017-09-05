@@ -1,0 +1,160 @@
+{
+"Controllers":[
+{
+	"Command Status" : {
+		"Controller" : 0,
+		"Status" : "Success",
+		"Description" : "None"
+	},
+	"Response Data" : {
+		"Product Name" : "Cisco 12G SAS Modular Raid Controller",
+		"Serial Number" : "SV52733273",
+		"SAS Address" : " 578da6e715bc8b50",
+		"Mfg. Date" : "07/01/15",
+		"System Time" : "08/28/2017 11:56:02",
+		"Controller Time" : "08/28/2017 08:56:01",
+		"FW Package Build" : "24.7.0-0047",
+		"BIOS Version" : "6.22.03.0_4.16.08.00_0x060B0200",
+		"FW Version" : "4.270.00-4238",
+		"Driver Name" : "megaraid_sas",
+		"Driver Version" : "06.700.06.00-rc1",
+		"Controller Bus Type" : "N/A",
+		"PCI Slot" : "N/A",
+		"PCI Bus Number" : 13,
+		"PCI Device Number" : 0,
+		"PCI Function Number" : 0,
+		"Drive Groups" : 1,
+		"TOPOLOGY" : [
+			{
+				"DG" : 0,
+				"Arr" : "-",
+				"Row" : "-",
+				"EID:Slot" : "-",
+				"DID" : "-",
+				"Type" : "RAID1",
+				"State" : "Dgrd",
+				"BT" : "N",
+				"Size" : "557.861 GB",
+				"PDC" : "dflt",
+				"PI" : "N",
+				"SED" : "N",
+				"DS3" : "none",
+				"FSpace" : "N"
+			},
+			{
+				"DG" : 0,
+				"Arr" : 0,
+				"Row" : "-",
+				"EID:Slot" : "-",
+				"DID" : "-",
+				"Type" : "RAID1",
+				"State" : "Dgrd",
+				"BT" : "N",
+				"Size" : "557.861 GB",
+				"PDC" : "dflt",
+				"PI" : "N",
+				"SED" : "N",
+				"DS3" : "none",
+				"FSpace" : "N"
+			},
+			{
+				"DG" : 0,
+				"Arr" : 0,
+				"Row" : 0,
+				"EID:Slot" : "252:1",
+				"DID" : 8,
+				"Type" : "DRIVE",
+				"State" : "Onln",
+				"BT" : "N",
+				"Size" : "557.861 GB",
+				"PDC" : "dflt",
+				"PI" : "N",
+				"SED" : "N",
+				"DS3" : "none",
+				"FSpace" : "-"
+			},
+			{
+				"DG" : 0,
+				"Arr" : 0,
+				"Row" : 1,
+				"EID:Slot" : "-",
+				"DID" : "-",
+				"Type" : "DRIVE",
+				"State" : "Msng",
+				"BT" : "-",
+				"Size" : "557.861 GB",
+				"PDC" : "-",
+				"PI" : "-",
+				"SED" : "-",
+				"DS3" : "-",
+				"FSpace" : "-"
+			}
+		],
+		"Missing Drives Count" : 1,
+		"Missing Drives" : [
+			{
+				"Array" : 0,
+				"Row" : 1,
+				"Size" : "557.861 GB"
+			}
+		],
+		"Virtual Drives" : 1,
+		"VD LIST" : [
+			{
+				"DG/VD" : "0/0",
+				"TYPE" : "RAID1",
+				"State" : "Dgrd",
+				"Access" : "RW",
+				"Consist" : "Yes",
+				"Cache" : "NRWTD",
+				"sCC" : "-",
+				"Size" : "557.861 GB",
+				"Name" : ""
+			}
+		],
+		"Physical Drives" : 2,
+		"PD LIST" : [
+			{
+				"EID:Slt" : "252:1",
+				"DID" : 8,
+				"State" : "Onln",
+				"DG" : 0,
+				"Size" : "557.861 GB",
+				"Intf" : "SAS",
+				"Med" : "HDD",
+				"SED" : "N",
+				"PI" : "N",
+				"SeSz" : "512B",
+				"Model" : "ST600MM0006     ",
+				"Sp" : "U"
+			},
+			{
+				"EID:Slt" : "252:2",
+				"DID" : 10,
+				"State" : "UBad",
+				"DG" : "-",
+				"Size" : "0 KB",
+				"Intf" : "SAS",
+				"Med" : "HDD",
+				"SED" : "N",
+				"PI" : "N",
+				"SeSz" : "512B",
+				"Model" : "ST600MM0026     ",
+				"Sp" : "U"
+			}
+		],
+		"BBU_Info" : [
+			{
+				"Model" : "CVPM02",
+				"State" : "Optimal",
+				"RetentionTime" : "0 hour(s)",
+				"Temp" : "21C",
+				"Mode" : "0",
+				"MfgDate" : "2014/09/11",
+				"Next Learn" : "2017/09/08  08:14:06"
+			}
+		]
+	}
+}
+]
+}

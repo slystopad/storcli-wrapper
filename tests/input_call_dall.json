@@ -1,0 +1,81 @@
+{
+"Controllers":[
+{
+        "Command Status" : {
+                "Controller" : 0,
+                "Status" : "Success",
+                "Description" : "Show Diskgroup Succeeded"
+        },
+        "Response Data" : {
+                "Response Data" : {
+                        "TOPOLOGY" : [
+                                {
+                                        "DG" : 0,
+                                        "Arr" : "-",
+                                        "Row" : "-",
+                                        "EID:Slot" : "-",
+                                        "DID" : "-",
+                                        "Type" : "RAID1",
+                                        "State" : "Optl",
+                                        "BT" : "N",
+                                        "Size" : "557.861 GB",
+                                        "PDC" : "dflt",
+                                        "PI" : "N",
+                                        "SED" : "N",
+                                        "DS3" : "none",
+                                        "FSpace" : "N"
+                                },
+                                {
+                                        "DG" : 0,
+                                        "Arr" : 0,
+                                        "Row" : "-",
+                                        "EID:Slot" : "-",
+                                        "DID" : "-",
+                                        "Type" : "RAID1",
+                                        "State" : "Optl",
+                                        "BT" : "N",
+                                        "Size" : "557.861 GB",
+                                        "PDC" : "dflt",
+                                        "PI" : "N",
+                                        "SED" : "N",
+                                        "DS3" : "none",
+                                        "FSpace" : "N"
+                                },
+                                {
+                                        "DG" : 0,
+                                        "Arr" : 0,
+                                        "Row" : 0,
+                                        "EID:Slot" : "252:1",
+                                        "DID" : 0,
+                                        "Type" : "DRIVE",
+                                        "State" : "Onln",
+                                        "BT" : "N",
+                                        "Size" : "557.861 GB",
+                                        "PDC" : "dflt",
+                                        "PI" : "N",
+                                        "SED" : "N",
+                                        "DS3" : "none",
+                                        "FSpace" : "-"
+                                },
+                                {
+                                        "DG" : 0,
+                                        "Arr" : 0,
+                                        "Row" : 1,
+                                        "EID:Slot" : "252:2",
+                                        "DID" : 1,
+                                        "Type" : "DRIVE",
+                                        "State" : "Onln",
+                                        "BT" : "N",
+                                        "Size" : "557.861 GB",
+                                        "PDC" : "dflt",
+                                        "PI" : "N",
+                                        "SED" : "N",
+                                        "DS3" : "none",
+                                        "FSpace" : "-"
+                                }
+                        ]
+                }
+        }
+}
+]
+}
