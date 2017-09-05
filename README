@@ -1,0 +1,45 @@
+usage: storcli_wrapper.py [-h]
+                          [--pd-list | --vd-list | --pd-count | --vd-count | --missing-count | --sample-config]
+                          [--file FILE]
+
+Parser for LSI Storage Command Line Tool
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --pd-list        Get status of Physical Drives (default mode)
+  --vd-list        Get status of Virtual Drives
+  --pd-count       Get number of Physical Drives
+  --vd-count       Get number of Virtual Drives
+  --missing-count  Get number of Missing(failed) drives
+  --sample-config  Show example config for Telegraf
+  --file FILE      JSON file to get data from file instead of getting it from
+                   controller. Usually you don't need this option
+
+  The tool is simple wrapper around Storage Command Line Tool.
+  It is intended to be run by Telegraf `exec` input module
+  to collect metrics for Physical Drives (PD) and
+  Virtual Drives (VD/RAID arrays) connected to LSI controllers
+  known to Storage Command Line Tool (StorCLI). Actually it works
+  as simple filter to normalize data it gets from StorCLI.
+  It run StorCLI utility to get data from controller.
+  The tool looks for StorCLI binary in the following directories:
+    current directory
+    /opt/MegaRAID/storcli
+    $PATH 
+
+  Tested with folowing RAID controllers:
+    LSI 3108 MegaRAID
+    Cisco 12G SAS Modular Raid Controller
+  and
+    Storage Command Line Tool Ver 1.03.11 Jan 30, 2013
+    Storage Command Line Tool Ver 007.0205.0000.0000 March 27, 2017
+
+  Links:
+    Telegraf https://docs.influxdata.com/telegraf/
+    StorCLI https://www.broadcom.com/support/download-search
+            (search by `storcli`)
+
+  Limitations:
+    only one controller is supported at the time
+    --sample-config is broken
+    must be run via `sudo`
