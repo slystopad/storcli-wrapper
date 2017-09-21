@@ -87,8 +87,16 @@ def remap_to_int(value, mapping_list):
     Args:
       value (str):
       mapping_list (list):
+
+    Returns special value 65534 if value is absent in mapping_list
+    It should be considered as indicator to update provided mappings
+    If you receive 65534 please open bug and provide example of
+    storcli output
     """
-    return mapping_list.index(value.lower())
+    try:
+        return mapping_list.index(value.lower())
+    except ValueError:
+        return 65534
 
 def pd_states(value):
     return remap_to_int(value, PD_STATES)
@@ -292,6 +300,9 @@ HELP_EPILOG = '''
     only one controller is supported at the time
     --sample-config is broken
     must be run via `sudo`
+
+    If you receive 65534 as disk state please open bug and provide
+    example of storcli output
 '''
 
 if __name__ == "__main__":
