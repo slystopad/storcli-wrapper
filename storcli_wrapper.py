@@ -9,7 +9,7 @@ FAKE_STORCLI_OUT={'call':'tests/input_call.json',
                   'call_dall':'tests/input_call_dall.json',
                   'call_eall_sall':'tests/input_call_eall_sall.json'}
 
-PD_STATES = ['onln', 'ubad', 'msng']
+PD_STATES = ['onln', 'ugood', 'ubad', 'msng']
 VD_STATES = ['optl', 'dgrd']
 STORCLI_PATH = ['/opt/MegaRAID/storcli']
 STORCLI_BIN_NAME = 'storcli64'
