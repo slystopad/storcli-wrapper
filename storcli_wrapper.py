@@ -316,6 +316,26 @@ HELP_EPILOG = '''
 
     If you receive 65534 as disk state please open bug and provide
     example of storcli output
+
+  Known issues:
+  with some combination of storcli version and controller you may get
+  an error as shown below or similar. Try to use another version
+  of storcli and feel free to open bug for storcli-wrapper.
+  Got error from controller:
+  {
+      "Status": "Failure",
+      "Detailed Status": [
+          {
+              "Status": "Failed",
+              "ErrCd": 255,
+              "ErrMsg": "Failed to get Controller information",
+              "Ctrl": 0
+          }
+      ],
+      "Controller": 0,
+      "Description": "None"
+  }
+
 '''
 
 if __name__ == "__main__":
