@@ -34,12 +34,17 @@ def find_binary(exe=None):
                 return full_path
     raise RuntimeError('Can not find StorCLI binary `{}`'.format(exe))
 
-def get_data():
+def get_data(cmd_args='/call show J'):
     cmd = find_binary(STORCLI_BIN_NAME)
     data = subprocess.check_output(
-        [cmd, "/call show J"],
+        [cmd, cmd_args],
         stderr=subprocess.STDOUT)
     return data
+
+def get_storcli_version():
+    cmd = find_binary(STORCLI_BIN_NAME)
+    version = get_data('-v')
+    return (cmd, version)
 
 def apply_tf(data, tf):
     """Apply function `tf` (transformation function) if specified
@@ -267,6 +272,8 @@ def get_cli_options():
                       help="JSON file to get data from file instead of "
                            + "getting it from controller. "
                            + "Usually you don't need this option")
+  parser.add_argument('--storcli-version', action='store_true',
+                      help="Get version and location of storcli tool")
 
   args = parser.parse_args()
   return (args, parser.prog)
@@ -310,6 +317,12 @@ if __name__ == "__main__":
 
   if args.sample_config:
     get_sample_telegraf_conf(progname)
+    sys.exit(0)
+
+  if args.storcli_version:
+    path, version = get_storcli_version()
+    print('Storcli is located at: {}'. format(path))
+    print('Storcli version is: {}'. format(version))
     sys.exit(0)
 
   try:
