@@ -198,9 +198,15 @@ class StorcliBaseWrapper(object):
     for ctl in controllers:
       ctl_id = ctl.get('Command Status').get('Controller')
       self._cmd_status[ctl_id] = ctl.get('Command Status', {}).get('Status')
-      err = ctl.get('Command Status', {}).get('Description')
+      err_description = ctl.get('Command Status', {}).get('Description')
+      err_details = ctl.get('Command Status', {}).get('Detailed Status')
       if self._cmd_status[ctl_id] != 'Success':
-          raise RuntimeError(err)
+          raise RuntimeError(
+                    'Got error from controller. Error description: {}\n{}'.format(
+                         err_description,
+                         json.dumps(ctl.get('Command Status'),indent=4)
+                     )
+                )
       self._pd_list[ctl_id] = ctl.get('Response Data', {}).get('PD LIST')
       self._vd_list[ctl_id] = ctl.get('Response Data', {}).get('VD LIST')
       self._pd_count[ctl_id] = ctl.get('Response Data', {}).get('Physical Drives')
