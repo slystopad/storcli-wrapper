@@ -27,7 +27,7 @@ def find_binary(exe=None):
     if exe:
         (path, name) = os.path.split(exe)
         if os.access(exe, os.X_OK):
-            return exe
+            return os.path.realpath(exe)
         for path in STORCLI_PATH + os.environ.get('PATH').split(os.pathsep):
             full_path = os.path.join(path, exe)
             if os.access(full_path, os.X_OK):
