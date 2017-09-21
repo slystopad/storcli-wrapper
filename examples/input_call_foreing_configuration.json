@@ -1,0 +1,146 @@
+{
+"Controllers":[
+{
+	"Command Status" : {
+		"Controller" : 0,
+		"Status" : "Success",
+		"Description" : "None"
+	},
+	"Response Data" : {
+		"Product Name" : "LSI 3108 MegaRAID",
+		"Serial Number" : "",
+		"SAS Address" : " 50030480188edf01",
+		"PCI Address" : "00:03:00:00",
+		"System Time" : "09/21/2017 14:15:01",
+		"Mfg. Date" : "00/00/00",
+		"Controller Time" : "09/21/2017 11:00:53",
+		"FW Package Build" : "24.7.0-0026",
+		"BIOS Version" : "6.22.03.0_4.16.08.00_0x060B0200",
+		"FW Version" : "4.270.00-3972",
+		"Driver Name" : "megaraid_sas",
+		"Driver Version" : "06.700.06.00-rc1",
+		"Vendor Id" : 4096,
+		"Device Id" : 93,
+		"SubVendor Id" : 5593,
+		"SubDevice Id" : 2057,
+		"Host Interface" : "PCI-E",
+		"Device Interface" : "SAS-12G",
+		"Bus Number" : 3,
+		"Device Number" : 0,
+		"Function Number" : 0,
+		"FOREIGN CONFIGURATION" : [
+			{
+				"DG" : 0,
+				"EID:Slot" : "-",
+				"Type" : "RAID1",
+				"State" : "Frgn",
+				"Size" : "558.406 GB",
+				"NoVDs" : 1
+			}
+		],
+		"Total foreign drive groups" : 1,
+		"Drive Groups" : 1,
+		"TOPOLOGY" : [
+			{
+				"DG" : 0,
+				"Arr" : "-",
+				"Row" : "-",
+				"EID:Slot" : "-",
+				"DID" : "-",
+				"Type" : "RAID0",
+				"State" : "Optl",
+				"BT" : "N",
+				"Size" : "558.406 GB",
+				"PDC" : "dflt",
+				"PI" : "N",
+				"SED" : "N",
+				"DS3" : "dflt",
+				"FSpace" : "N",
+				"TR" : "N"
+			},
+			{
+				"DG" : 0,
+				"Arr" : 0,
+				"Row" : "-",
+				"EID:Slot" : "-",
+				"DID" : "-",
+				"Type" : "RAID0",
+				"State" : "Optl",
+				"BT" : "N",
+				"Size" : "558.406 GB",
+				"PDC" : "dflt",
+				"PI" : "N",
+				"SED" : "N",
+				"DS3" : "dflt",
+				"FSpace" : "N",
+				"TR" : "N"
+			},
+			{
+				"DG" : 0,
+				"Arr" : 0,
+				"Row" : 0,
+				"EID:Slot" : "252:1",
+				"DID" : 0,
+				"Type" : "DRIVE",
+				"State" : "Onln",
+				"BT" : "N",
+				"Size" : "558.406 GB",
+				"PDC" : "dflt",
+				"PI" : "N",
+				"SED" : "N",
+				"DS3" : "dflt",
+				"FSpace" : "-",
+				"TR" : "N"
+			}
+		],
+		"Virtual Drives" : 1,
+		"VD LIST" : [
+			{
+				"DG/VD" : "0/0",
+				"TYPE" : "RAID0",
+				"State" : "Optl",
+				"Access" : "RW",
+				"Consist" : "No",
+				"Cache" : "RWTD",
+				"Cac" : "-",
+				"sCC" : "ON",
+				"Size" : "558.406 GB",
+				"Name" : ""
+			}
+		],
+		"Physical Drives" : 2,
+		"PD LIST" : [
+			{
+				"EID:Slt" : "252:0",
+				"DID" : 3,
+				"State" : "UGood",
+				"DG" : "F",
+				"Size" : "558.406 GB",
+				"Intf" : "SAS",
+				"Med" : "HDD",
+				"SED" : "N",
+				"PI" : "N",
+				"SeSz" : "512B",
+				"Model" : "ST600MM0006     ",
+				"Sp" : "U"
+			},
+			{
+				"EID:Slt" : "252:1",
+				"DID" : 0,
+				"State" : "Onln",
+				"DG" : 0,
+				"Size" : "558.406 GB",
+				"Intf" : "SAS",
+				"Med" : "HDD",
+				"SED" : "Y",
+				"PI" : "N",
+				"SeSz" : "512B",
+				"Model" : "ST600MM0026     ",
+				"Sp" : "U"
+			}
+		]
+	}
+}
+]
+}
+
